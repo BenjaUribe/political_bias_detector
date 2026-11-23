@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "description": "TEMPLATE: Memoria de Contexto Chileno y Diccionario para Anonimización (Fase 1 y Fase 2)",
+    "purpose": [
+      "1. Alimentar al Anonimizador (anonymizer.py) para ocultar entidades políticas y medios chilenos por tokens neutros ([POLITICO_X], [PARTIDO_Y], [COALICION_Z], [MEDIO]).",
+      "2. Alimentar al Analista Crítico (critical_analyst.py) con siglas, coaliciones, reformas y marcos léxicos propios de Chile."
+    ],
+    "last_updated": "TODO: Completar durante Fase 0 / Fase 2"
+  },
+  "media_outlets": [
+    {
+      "domain": "emol.com",
+      "aliases": ["El Mercurio", "EMOL"],
+      "replacement_token": "[MEDIO]"
+    },
+    {
+      "domain": "latercera.com",
+      "aliases": ["La Tercera", "LT", "Pulso"],
+      "replacement_token": "[MEDIO]"
+    },
+    {
+      "domain": "biobiochile.cl",
+      "aliases": ["BioBioChile", "Radio Bío-Bío", "Bío Bío"],
+      "replacement_token": "[MEDIO]"
+    },
+    {
+      "domain": "elmostrador.cl",
+      "aliases": ["El Mostrador"],
+      "replacement_token": "[MEDIO]"
+    },
+    {
+      "domain": "ciperchile.cl",
+      "aliases": ["CIPER", "CIPER Chile"],
+      "replacement_token": "[MEDIO]"
+    },
+    {
+      "domain": "eldesconcierto.cl",
+      "aliases": ["El Desconcierto"],
+      "replacement_token": "[MEDIO]"
+    }
+  ],
+  "political_parties_and_coalitions": {
+    "parties": [
+      "TODO: Agregar partidos políticos vigentes, siglas (ej. UDI, RN, Evópoli, Republicanos, DC, PPD, PS, FA, PC) y sus tokens neutros"
+    ],
+    "coalitions": [
+      "TODO: Agregar coaliciones y bloques parlamentarios vigentes"
+    ]
+  },
+  "political_figures_and_roles": [
+    "TODO: Agregar lista base de autoridades, ministros, parlamentarios y líderes políticos frecuentes para complementar el NER de spaCy"
+  ],
+  "active_reforms_and_context_glossary": [
+    {
+      "topic": "TODO: Ejemplo - Reforma Previsional / Sistema de Pensiones",
+      "key_acronyms": ["AFP", "PGU"],
+      "framing_lexicon_notes": "TODO: Documentar cómo suele encuadrarse el léxico según cada sector sin sesgar al explicador"
+    }
+  ]
+}

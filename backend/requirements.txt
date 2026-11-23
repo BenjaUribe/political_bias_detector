@@ -1,0 +1,33 @@
+# ==============================================================================
+# TEMPLATE: Dependencias del Backend (Python 3.11+)
+# Ubicación: backend/requirements.txt
+# ==============================================================================
+
+# --- API REST & Validación (Fase 1) ---
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+python-multipart>=0.0.12
+
+# --- Ingesta & Scraping (Fase 0 / Fase 1) ---
+trafilatura>=1.12.0
+httpx>=0.27.0
+
+# --- NLP Clásico, Anonimización & Contador Estructural (Fase 1 / Fase 2) ---
+spacy>=3.7.0
+# Nota: Requiere instalar el modelo en español:
+# python -m spacy download es_core_news_lg
+
+# --- Modelo Clasificador / Juez BETO (Fase 1) ---
+transformers>=4.45.0
+torch>=2.4.0
+huggingface-hub>=0.25.0
+
+# --- Explicabilidad & OCR Multimodal (Fase 1 / Fase 2) ---
+google-genai>=0.3.0
+Pillow>=10.4.0
+
+# --- Base de Datos / Caché de Consultas (Fase 1 / Fase 2) ---
+sqlalchemy>=2.0.35
+aiosqlite>=0.20.0
