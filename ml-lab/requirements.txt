@@ -1,0 +1,5 @@
+feedparser
+trafilatura
+pandas
+requests
+scikit-learn
